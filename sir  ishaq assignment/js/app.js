@@ -72,12 +72,16 @@ Write a JavaScript function that accepts a string as a parameter and converts th
 Example string : 'the quick brown fox'
 Expected Output : 'The Quick Brown Fox '
 */
-
-// function capitalize(str) {
-//     return str.replace(/\w\S*/g, function (txt) { return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase(); });
-// }
-// console.log(capitalize('the quick brown fox'));
-
+/*
+function upperCase(str) {
+    var str = str.split(" ");
+    for (var i = 0; i < str.length; i++) {
+        str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+    }
+    return str.join(" ");
+}
+console.log(upperCase("the quick brown fox"));
+*/
 /*
 6)
  Write a JavaScript function that accepts a string as a parameter and find the longest word within the string.
